@@ -17,3 +17,22 @@
   font-weight: 700 ;
   pointer-events: none;
 }
+
+.exampleEnter {
+  opacity: 0;
+  transform:translateY(-100%);
+}
+.exampleEnterActive {
+  opacity: 1;
+  transform:translateY(0);
+  transition: opacity 350ms, transform 350ms;
+}
+.exampleExit {
+  opacity: 1;
+  transform:translateY(0);
+}
+.exampleExitActive {
+  opacity: 0;
+  transform:translateY(100%);
+  transition: opacity 350ms, transform 350ms;
+}

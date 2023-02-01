@@ -4,13 +4,13 @@
 }
 
 .toolTipCustom {
-  display: flex;
-  top: -5px;
-  left: 32px;
-  height: 48px;
-  padding: 8px 32px;
-  align-items: center;
-  background-color: #1e9f00;
-  color: #fdfa65;
-  border-radius: 50%;
+  display: flex !important;;
+  top: -5px !important;;
+  left: 32px !important;;
+  height: 48px !important;;
+  padding: 8px 32px !important;;
+  align-items: center !important;;
+  background-color: #1e9f00 !important;
+  color: #fdfa65 !important;
+  border-radius: 50% !important;;
 }
