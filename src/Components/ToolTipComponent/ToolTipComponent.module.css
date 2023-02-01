@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  display: flex;
+}
+
+.tooltip {
+  position: absolute;
+  width: 180px;
+  padding: 4px 12px;
+  margin-left: calc(100%);
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #FF8E00;
+  border-radius: 12px ;
+  text-align: center;
+  white-space: pre-line;
+  font-weight: 700 ;
+  pointer-events: none;
+}

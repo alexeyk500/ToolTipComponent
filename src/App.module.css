@@ -2,3 +2,15 @@
   display: flex;
   padding: 64px;
 }
+
+.toolTipCustom {
+  display: flex;
+  top: -5px;
+  left: 32px;
+  height: 48px;
+  padding: 8px 32px;
+  align-items: center;
+  background-color: #1e9f00;
+  color: #fdfa65;
+  border-radius: 50%;
+}
