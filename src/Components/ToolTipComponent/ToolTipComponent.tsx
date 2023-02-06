@@ -36,7 +36,9 @@ const ToolTipComponent: React.FC<PropsType> = ({ children, text, customClass }) 
     <div className={classes.container} onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler}>
       {children}
       <CSSTransition nodeRef={nodeRef} in={showToolTip} timeout={750} classNames={transitionClasses} unmountOnExit>
-        <div ref={nodeRef} className={toolTipClasses}>{text}</div>
+        <div ref={nodeRef} className={toolTipClasses}>
+          {text}
+        </div>
       </CSSTransition>
     </div>
   );
