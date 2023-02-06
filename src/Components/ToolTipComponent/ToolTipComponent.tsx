@@ -17,6 +17,7 @@ const transitionClasses = {
 
 const ToolTipComponent: React.FC<PropsType> = ({ children, text, customClass }) => {
   const refSetTimeout = useRef<NodeJS.Timeout>();
+  const nodeRef = React.useRef(null);
   const [showToolTip, setShowToolTip] = useState(false);
   const toolTipClasses = customClass ? `${classes.tooltip} ${customClass}` : `${classes.tooltip}`;
 
@@ -34,8 +35,8 @@ const ToolTipComponent: React.FC<PropsType> = ({ children, text, customClass }) 
   return (
     <div className={classes.container} onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler}>
       {children}
-      <CSSTransition in={showToolTip} timeout={750} classNames={transitionClasses} unmountOnExit>
-        <div className={toolTipClasses}>{text}</div>
+      <CSSTransition nodeRef={nodeRef} in={showToolTip} timeout={750} classNames={transitionClasses} unmountOnExit>
+        <div ref={nodeRef} className={toolTipClasses}>{text}</div>
       </CSSTransition>
     </div>
   );

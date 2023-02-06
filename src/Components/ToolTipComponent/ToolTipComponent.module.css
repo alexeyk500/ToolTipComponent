@@ -1,6 +1,9 @@
 .container {
   position: relative;
-  display: flex;
+  width: 112px;
+  /*display: flex;*/
+  /*flex-grow: 0;*/
+  /*flex-direction: column;*/
 }
 
 .tooltip {

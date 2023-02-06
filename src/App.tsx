@@ -9,6 +9,12 @@ function App() {
       <ToolTipComponent text={'Я подсказка'} customClass={classes.toolTipCustom}>
         <ButtonComponent />
       </ToolTipComponent>
+      <div className={classes.buttonContainer} >
+        <span data-hint="Я подсказка">
+          <ButtonComponent />
+        </span>
+      </div>
+
     </div>
   );
 }
