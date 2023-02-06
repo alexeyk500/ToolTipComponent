@@ -6,7 +6,6 @@
 
 .buttonContainer {
   display: flex;
-  margin: 64px 0;
 }
 
 *[data-hint] {
