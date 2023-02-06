@@ -10,7 +10,7 @@ function App() {
         <ButtonComponent />
       </ToolTipComponent>
       <div className={classes.buttonContainer}>
-        <span data-hint="Я подсказка">
+        <span data-hint="Я подсказка CSS">
           <ButtonComponent />
         </span>
       </div>
