@@ -4,18 +4,6 @@
   padding: 64px;
 }
 
-.toolTipCustom {
-  display: flex !important;;
-  top: -5px !important;;
-  left: 32px !important;;
-  height: 48px !important;;
-  padding: 8px 32px !important;;
-  align-items: center !important;;
-  background-color: #1e9f00 !important;
-  color: #fdfa65 !important;
-  border-radius: 50% !important;
-}
-
 .buttonContainer {
   display: flex;
   margin: 64px 0;
